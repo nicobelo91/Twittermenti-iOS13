@@ -12,7 +12,7 @@ struct EmojiManager {
     
     mutating func chooseEmoji(_ sentimentScore: Int) -> String {
         
-        var emoji = ""
+        let emoji = ""
         
         switch emoji {
         case _ where sentimentScore > 20:
