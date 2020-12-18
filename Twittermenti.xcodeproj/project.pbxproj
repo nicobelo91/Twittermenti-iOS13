@@ -10,6 +10,7 @@
 		04E54394258A913100E38386 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E54393258A913100E38386 /* APIKeys.swift */; };
 		04F65960258A4E8100697D5C /* Swifter in Frameworks */ = {isa = PBXBuildFile; productRef = 04F6595F258A4E8100697D5C /* Swifter */; };
 		04F65962258A4EFB00697D5C /* TweetSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 04F65961258A4EFB00697D5C /* TweetSentimentClassifier.mlmodel */; };
+		04FC5988258C28FB0049B951 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 04FC5987258C28FB0049B951 /* SwiftyJSON */; };
 		AD9EC65020FE2EF4002AE9BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC64F20FE2EF4002AE9BF /* AppDelegate.swift */; };
 		AD9EC65220FE2EF4002AE9BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9EC65120FE2EF4002AE9BF /* ViewController.swift */; };
 		AD9EC65520FE2EF4002AE9BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9EC65320FE2EF4002AE9BF /* Main.storyboard */; };
@@ -49,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FC5988258C28FB0049B951 /* SwiftyJSON in Frameworks */,
 				04F65960258A4E8100697D5C /* Swifter in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = Twittermenti;
 			packageProductDependencies = (
 				04F6595F258A4E8100697D5C /* Swifter */,
+				04FC5987258C28FB0049B951 /* SwiftyJSON */,
 			);
 			productName = Twittermenti;
 			productReference = AD9EC64C20FE2EF4002AE9BF /* Twittermenti.app */;
@@ -179,6 +182,7 @@
 			mainGroup = AD9EC64320FE2EF4002AE9BF;
 			packageReferences = (
 				04F6595E258A4E8100697D5C /* XCRemoteSwiftPackageReference "Swifter" */,
+				04FC5986258C28FB0049B951 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = AD9EC64D20FE2EF4002AE9BF /* Products */;
 			projectDirPath = "";
@@ -423,6 +427,14 @@
 				minimumVersion = 2.4.0;
 			};
 		};
+		04FC5986258C28FB0049B951 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -430,6 +442,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04F6595E258A4E8100697D5C /* XCRemoteSwiftPackageReference "Swifter" */;
 			productName = Swifter;
+		};
+		04FC5987258C28FB0049B951 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04FC5986258C28FB0049B951 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
